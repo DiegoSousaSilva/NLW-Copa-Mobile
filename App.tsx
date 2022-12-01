@@ -12,6 +12,7 @@ import { Signin } from "./src/screens/Signin";
 import { AuthContextProvider } from "./src/contexts/AuthContext";
 import { New } from "./src/screens/New";
 import { Find } from "./src/screens/Find";
+import Bets from "./src/screens/Bets";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -28,7 +29,7 @@ export default function App() {
           backgroundColor="transparent"
           translucent
         />
-        {fontsLoaded ? <Find /> : <Loading />}
+        {fontsLoaded ? <Bets /> : <Loading />}
       </AuthContextProvider>
     </NativeBaseProvider>
   );
